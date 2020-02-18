@@ -1,0 +1,32 @@
+.topNav {
+	&__list {
+		padding: 0;
+		display: flex;
+		list-style: none;
+		justify-content: space-between;
+		@media (max-width: @sm) {
+			flex-direction: column;
+		}	
+	}
+	&__list-item {
+
+	}
+	&__link {
+		color: @black;
+		.grotesk();
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		display: block;
+		text-align: center;
+		@media (max-width: @sm) {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+	&--left {
+
+	}
+	&--right {
+
+	}
+}

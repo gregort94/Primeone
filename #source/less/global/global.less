@@ -1,0 +1,44 @@
+html {
+  font-size: 10px;
+}
+body {
+	.reg();
+  color: @black;
+}
+a {
+  text-decoration: none;
+  .reg();
+  &:hover {
+    color: @linkColor;
+  }
+}
+h2,h3{
+  text-transform: uppercase;
+}
+img { 
+  margin: auto;
+}
+.container {
+	max-width: 880px;
+	margin: auto;
+	padding: 0 @containerPadding;
+  box-sizing: content-box;
+  @media  (max-width: @md) {
+    box-sizing: border-box;
+    max-width: 720px;
+  }
+  @media (max-width: @sm) {
+    max-width: 540px;
+  }
+  @media (max-width: @xs) {
+      max-width: 100%;
+  }
+}
+input,textarea{
+  &:focus {
+    border-color: @linkColor;
+  }
+}
+body.lock {
+  overflow: hidden;
+}

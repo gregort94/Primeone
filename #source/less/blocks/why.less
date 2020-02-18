@@ -1,0 +1,66 @@
+.why {
+	background-color: @featuresBG;
+	&__header {
+		color: @white;
+		display: flex;
+		background-color: @black;
+		text-align: right;
+	}
+	&__header-col {
+		flex: 0 0 50%;
+		padding: 56px;
+		&:last-child { 
+			background: @black url('../img/why/bg.jpg') center/cover no-repeat;
+			@media (max-width: @md) {
+				background-position: right 0;
+			}
+			@media (max-width: @sm) {
+			 	display: none;
+			 } 
+		};
+		@media (max-width: @md) {
+			padding: 45px;
+		}
+		@media (max-width: @sm) {
+			flex: 0 0 100%;
+			text-align: center;
+		}
+	}
+	&__header-title {}
+	&__body {
+		padding: 35px 0px 35px 0px;
+		.flex-wrap(@colOffset)
+	}
+	&__item {
+		.size(6);
+		.size-sm(12);
+		display: flex;
+	}
+	&__item-logoBox {
+		flex: 0 0 100px;
+		height: 100px;
+		background-color: @black;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		@media (min-width: @sm) and (max-width: @md) {
+			flex: 0 0 150px;
+			height: 150px;
+		}
+
+	}
+	&__item-logo {
+		@media (min-width: @sm) and (max-width: @md) {
+			width: 80px;
+		}
+
+	}
+	&__item-body {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-left: 12px;
+	}
+	&__item-title {}
+	&__item-text {}
+}

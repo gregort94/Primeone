@@ -1,0 +1,35 @@
+.logo {
+	position: relative;
+	z-index: 100;
+
+	text-align: center;
+	.bebas();
+	font-size: 8px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	&__topSpan {
+		display: block;
+	}
+	&__Img {
+		z-index: 100;
+		@media (max-width: 450px) {
+			width: 150px;
+		}
+		@media (max-width: 370px) {
+			width: 120px;
+		}
+	}
+	&__botSpan {
+		display: block;
+	}
+	@media (max-width: @md) {
+		margin: 0px 30px 0px 30px;
+	}
+	@media (max-width: 370px) {
+		
+	}
+	@media (max-width: @sm) {
+		display: inline-block;
+		margin: 0;
+	}
+}

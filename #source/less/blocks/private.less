@@ -1,0 +1,29 @@
+.private {
+	display: flex;
+	background-color: @black;
+	color: @white;
+	&__col {
+		padding: 75px 60px 75px 60px;
+		flex: 1 0 50%;
+		&:first-child { 
+			background: @black url('../img/mainBG.jpg') center/cover no-repeat;
+		};
+		@media (max-width: @sm) {
+			&:first-child {
+				display: none; 
+			};
+			padding: 30px;
+		}
+	}
+	&__wrap {
+		max-width: 320px;
+	}
+	&__title {
+		margin: 0px 0px 25px 0px;
+	}
+	&__text {
+		margin: 0px 0px 55px 0px;
+	}
+	&__btn {}
+}
+

@@ -1,0 +1,24 @@
+.bourger {
+	width: 40px;
+	height: 40px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	cursor: pointer;
+	z-index: 10;
+	position: relative;
+	&__span {
+		height: 4px;
+		background-color: black;
+		transition: all 0.5s ease 0s;
+		position: relative;
+	}
+	&.active {
+		.bourger__span:nth-child(1) { transform: rotate(45deg) translateY(18px) };
+		.bourger__span:nth-child(2) { transform: scale(0)};
+		.bourger__span:nth-child(3){ transform: rotate(-45deg) translateY(-18px)};
+	}
+	@media (max-width: @sm) {
+		display: flex;
+	}
+}
