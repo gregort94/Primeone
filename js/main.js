@@ -55,20 +55,9 @@ $( function() {
 		event.preventDefault();
 	});
 // Валидиция формы
-	$('.form').on('submit', function(){
-		var inputs = $(this).find('.form__input');
-		var stopSubmit = false;
-		inputs.each (function() {
-			var inputValue = $(this).prop("value");
-			if (inputValue == "") {
-				$(this).addClass('err');
-				stopSubmit = true;
-			}
-		})
-		if (stopSubmit) {
-			event.preventDefault();
-		}
-	});
+	$('.form__input').on('invalid', function (){
+		$(this).addClass('err');	
+	})
 	$('.form__input').on('input', function(event) {
 		$(this).removeClass('err');
 	});

@@ -453,6 +453,9 @@ a {
 a:hover {
   color: #d67493;
 }
+a:focus {
+  color: #d67493;
+}
 h2,
 h3 {
   text-transform: uppercase;
@@ -622,6 +625,9 @@ body.lock {
   color: #000000;
 }
 .button:hover {
+  color: #d67493;
+}
+.button:focus {
   color: #d67493;
 }
 .h2 {
